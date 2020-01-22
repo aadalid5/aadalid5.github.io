@@ -1,3 +1,0 @@
-[FreeTutorials.Eu] Udemy - The Complete Web Developer in 2019 Zero to Mastery
-
-Sample code from lesson "7. Advanced CSS"
