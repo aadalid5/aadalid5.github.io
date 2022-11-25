@@ -1,0 +1,50 @@
+<!-- eslint-disable import/no-unresolved, import/extensions -->
+
+import { Meta } from '@storybook/addon-docs';
+import MyComponent from '../Component';
+import PropsTable from '../../../story-helpers/PropsTableHelper.mdx';
+import Table from '../../../story-helpers/TableHelper.mdx';
+
+<Meta title="Components/MyComponent/Overview" component={MyComponent} />
+
+# MyComponent
+
+Short description for component MyComponent.
+
+## Props
+
+export const propsList = [
+    { name: 'children', type: 'node', description: 'Prop description' },
+    {
+        name: 'variant',
+        type: 'string',
+        description: 'Prop description',
+        defaultValue: MyComponent.variant.PRIMARY,
+    },
+];
+
+<PropsTable propsList={propsList} />
+
+## Variants
+
+If applies, short description for the variants of MyComponent.
+
+<Table
+    headings={['Property', 'Description']}
+    body={[
+        ['<code>MyComponent.variants.ALT</code>', 'Variant Description'],
+        ['<code>MyComponent.variants.PRIMARY</code>', 'Variant Description.'],
+    ]}
+/>
+
+## Use example
+
+```jsx
+import MyComponent from 'mfe-core/ui/MyComponent';
+
+return (
+    <MyComponent variant={MyComponent.variant.ALT}>
+        <div>Some text</div>
+    </MyComponent>
+);
+```

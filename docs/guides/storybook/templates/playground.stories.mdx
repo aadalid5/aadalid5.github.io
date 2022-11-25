@@ -1,0 +1,33 @@
+<!-- eslint-disable import/no-unresolved, import/extensions -->
+
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import MyComponent from '../Component';
+
+<Meta
+    title="Components/MyComponent/Playground"
+    component={MyComponent}
+    argTypes={{}}
+/>
+
+# Playground
+
+export function Template(args) {
+    const { children, variant } = args;
+    return (
+        <div>
+            <MyComponent variant={variant}>{children}</MyComponent>
+        </div>
+    );
+}
+
+<Canvas>
+    <Story
+        name="Playground"
+        args={{
+            children: 'Some text',
+            variant: MyComponent.variant.PRIMARY,
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>

@@ -1,0 +1,30 @@
+<!-- eslint-disable import/no-unresolved, import/extensions -->
+
+import { Meta, Story } from '@storybook/addon-docs';
+import MyComponent from '../Component';
+import { Template } from '../playground.stories.mdx';
+
+<Meta
+    title="Components/MyComponent/Features"
+    component={MyComponent}
+    argTypes={{
+        children: {
+            table: { disable: true },
+        },
+        variant: {
+            table: { disable: true },
+        },
+    }}
+/>
+
+# Default Story
+
+<Story
+    name="Feature Variant"
+    args={{
+        children: 'Some text',
+        variant: MyComponent.variant.ALT,
+    }}
+>
+    {Template.bind({})}
+</Story>
