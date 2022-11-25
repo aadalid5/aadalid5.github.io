@@ -21,8 +21,8 @@ so that they can be reused when required.
 
 ### Overview Story
 
-This template aligns with the [Overview Structure](/docs/guides/storybook/structure.html#overview-story) guidelines.
-You can see the mdx template <a href="/docs/guides/storybook/templates/overview.stories.mdx" target="_blank" rel="noopener noreferrer">here</a>.
+This template aligns with the [Overview Structure](/structure.html#overview-story) guidelines.
+You can see the mdx template <a href="/templates/overview.stories.mdx" target="_blank" rel="noopener noreferrer">here</a>.
 
 ````md
 import { Meta } from '@storybook/addon-docs';
@@ -77,8 +77,8 @@ return (
 
 ### Playground Story
 
-This template aligns with the [Playground](/docs/guides/storybook/structure.html#playground-story) guidelines.
-You can see the mdx template <a href="/docs/guides/storybook/templates/playground.stories.mdx" target="_blank" rel="noopener noreferrer">here</a>.
+This template aligns with the [Playground](/structure.html#playground-story) guidelines.
+You can see the mdx template <a href="/templates/playground.stories.mdx" target="_blank" rel="noopener noreferrer">here</a>.
 
 ```md
 import { Meta, Canvas, Story } from '@storybook/addon-docs';
@@ -117,8 +117,8 @@ export function Template(args) {
 
 ### Feature Story
 
-This template aligns with the [Feature Stories](/docs/guides/storybook/structure.html#features-stories) guidelines.
-You can see the mdx template <a href="/docs/guides/storybook/templates/features/someFeature.stories.mdx" target="_blank" rel="noopener noreferrer">here</a>.
+This template aligns with the [Feature Stories](/structure.html#features-stories) guidelines.
+You can see the mdx template <a href="/templates/features/someFeature.stories.mdx" target="_blank" rel="noopener noreferrer">here</a>.
 
 ```md
 <Meta
