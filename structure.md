@@ -1,8 +1,5 @@
 ---
-grand_parent: Guides
-parent: Storybook
 title: Style & Structure
-layout: home
 ---
 
 # Storybook guidelines

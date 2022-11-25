@@ -1,8 +1,5 @@
 ---
-grand_parent: Guides
-parent: Storybook
 title: Templates
-layout: home
 ---
 
 # Story Templates
